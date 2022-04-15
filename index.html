@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" href="images/icon-calculator-64.png" />
+
+    <link rel="apple-touch-icon" href="images/icon-calculator-apple.png" />
+
+    <link rel="manifest" href="manifest.webmanifest" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
+
+    <script defer src="js/script.js"></script>
+
+    <title>Tip calculator app</title>
+  </head>
+  <body>
+    <img src="images/logo.svg" class="logo" />
+    <div class="container">
+      <div class="left">
+        <img class="icon-dollar" src="images/icon-dollar.svg" />
+        <img class="icon-people" src="images/icon-person.svg" />
+        <div class="flex">
+          <label class="bill-title">Bill</label>
+          <span class="error-bill hidden">Please enter a Number!</span>
+        </div>
+        <input type="number" class="bill" placeholder="0" />
+
+        <div class="flex">
+          <label class="people-title">Number of People</label>
+          <span class="error-people hidden">Please enter a number!</span>
+        </div>
+        <input type="number" pattern="\d*" class="people" placeholder="0" />
+
+        <p class="tip-title">Select tip %</p>
+        <div class="tip-container">
+          <button value="0.05" class="tip">5%</button>
+          <button value="0.10" class="tip tip10">10%</button>
+          <button value="0.15" class="tip">15%</button>
+          <button value="0.25" class="tip">25%</button>
+          <button value="0.50" class="tip">50%</button>
+          <input
+            class="custom"
+            type="number"
+            pattern="\d*"
+            placeholder="Custom %"
+          />
+          <button class="submit">SUBMIT</button>
+          <span class="percentage hidden">%</span>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="box box-top">
+          <p class="box-main">Tip Amount</p>
+          <p class="box-secondary">/ person</p>
+        </div>
+        <div class="box box-bot">
+          <p class="box-main">Total</p>
+          <p class="box-secondary">/ person</p>
+        </div>
+        <p class="number number-tip">$<span class="tip-amount">0.00</span></p>
+        <p class="number number-total">
+          $<span class="total-amount">0.00</span>
+        </p>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!-- Bill Select Tip % 5% 10% 15% 25% 50% Custom Number of People Tip Amount /
+    person Total / person Reset -->

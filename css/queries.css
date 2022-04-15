@@ -1,0 +1,48 @@
+/* BELOW 624px */
+@media (max-width: 39em) {
+  html {
+    font-size: 50%;
+  }
+
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+/* BELOW 512px */
+@media (max-width: 32em) {
+  .logo {
+    display: none;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    margin: 2.4rem;
+    row-gap: 9.2rem;
+  }
+
+  .submit {
+    display: block;
+  }
+
+  .right {
+    padding: 2.4rem;
+  }
+
+  .box {
+    margin-bottom: 4rem;
+  }
+
+  .box-bot {
+    margin-bottom: 2.4rem;
+  }
+
+  .reset {
+    margin-top: 0;
+    padding: 2rem;
+  }
+
+  .percentage {
+    bottom: 8rem;
+  }
+}

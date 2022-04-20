@@ -54,6 +54,7 @@ button {
   justify-self: center;
   position: absolute;
   top: 10rem;
+  color: var(--Very-dark-cyan);
 }
 
 .container {
